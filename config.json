@@ -1,0 +1,11 @@
+{
+    "Angle":[
+        {
+            "Neck":[10,20],
+            "Knee_left":[10,20],
+            "Knee_right":[10,20],
+            "Arm_left":[10,20],
+            "Arm_right":[10,20]
+        }
+    ]
+}
