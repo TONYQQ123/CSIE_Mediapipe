@@ -6,6 +6,7 @@ from Correct_angle import correct_angle
 #from Steps import Caculate_steps
 #from pathlib import Path
 
+
 def Photo(f_path):
     mp_pose = mp.solutions.pose
     mp_drawing = mp.solutions.drawing_utils
@@ -66,6 +67,7 @@ def CameraorVideo(f_path):
                 point.x=point.x*(image.shape[1]-1)
                 point.y=point.y*(image.shape[0]-1)
                 candidate.append(point)
+
             image=correct_angle(candidate,image) 
             
             #steps = Caculate_steps(candidate)
@@ -74,6 +76,7 @@ def CameraorVideo(f_path):
             #Step_frequency = steps/elapsed_time*60 
             #print('Step_frequency: ' + str(Step_frequency) +'\n')
             
+
             scalar_factor=0.6
             image=cv2.resize(image,(0,0),fx=scalar_factor,fy=scalar_factor)        
             cv2.imshow('Pose Tracking', image)     
@@ -100,8 +103,10 @@ if __name__=='__main__':
 
     if arg.mode=='video':
         CameraorVideo(arg.file)
+
         #file = Path('Steps.txt')
         #file.unlink()
+
     
     if arg.mode=='camera':
         CameraorVideo(None)
