@@ -2,6 +2,9 @@ import cv2
 import mediapipe as mp
 from Angle import Caculate_angle
 import argparse
+from Correct_angle import correct_angle
+#from Steps import Caculate_steps
+#from pathlib import Path
 
 def Photo(f_path):
     mp_pose = mp.solutions.pose
@@ -19,20 +22,28 @@ def Photo(f_path):
             
     if results.pose_landmarks:
         mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS)
-        candidate=[landmark for landmark in results.pose_landmarks.landmark]
-        Caculate_angle(candidate)
+        temp=[landmark for landmark in results.pose_landmarks.landmark]
+        for point in temp:
+            point.x=point.x*(image.shape[1]-1)
+            point.y=point.y*(image.shape[0]-1)
+            candidate.append(point)
+        image=correct_angle(candidate,image)
 
-    scalar_factor=0.3
+    scalar_factor=0.6
     image=cv2.resize(image,(0,0),fx=scalar_factor,fy=scalar_factor)        
     cv2.imshow('Pose Tracking', image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
 
-def Camera():
-    cap = cv2.VideoCapture(0)
+def CameraorVideo(f_path):
+    if f_path is not None:
+        cap=cv2.VideoCapture(f_path)
+    else:
+        cap=cv2.VideoCapture(0)
     mp_pose=mp.solutions.pose
     mp_drawing=mp.solutions.drawing_utils
+
     with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
         while cap.isOpened():
             ret, frame = cap.read()
@@ -50,13 +61,29 @@ def Camera():
             
             if results.pose_landmarks:
                 mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS)
-                candidate=[landmark for landmark in results.pose_landmarks.landmark]
-                Caculate_angle(candidate)          
+                temp=[landmark for landmark in results.pose_landmarks.landmark]
+            for point in temp:
+                point.x=point.x*(image.shape[1]-1)
+                point.y=point.y*(image.shape[0]-1)
+                candidate.append(point)
+            image=correct_angle(candidate,image) 
+            
+            #steps = Caculate_steps(candidate)
+            #current_time = cv2.getTickCount()
+            #elapsed_time = (current_time - start_time) / tick_frequency
+            #Step_frequency = steps/elapsed_time*60 
+            #print('Step_frequency: ' + str(Step_frequency) +'\n')
+            
+            scalar_factor=0.6
+            image=cv2.resize(image,(0,0),fx=scalar_factor,fy=scalar_factor)        
             cv2.imshow('Pose Tracking', image)     
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
     cap.release()
     cv2.destroyAllWindows()
+    
+
+
 
 
 if __name__=='__main__':
@@ -64,15 +91,20 @@ if __name__=='__main__':
     parser.add_argument('--mode',choices=['photo','video','camera'])
     parser.add_argument('--file')
     arg=parser.parse_args()
-
+    
+    #tick_frequency = cv2.getTickFrequency()
+    #start_time = cv2.getTickCount()
+    
     if arg.mode=='photo':
         Photo(arg.file)
 
     if arg.mode=='video':
-        print('Coming soon!')
+        CameraorVideo(arg.file)
+        #file = Path('Steps.txt')
+        #file.unlink()
     
     if arg.mode=='camera':
-        Camera()
+        CameraorVideo(None)
 
 
 
