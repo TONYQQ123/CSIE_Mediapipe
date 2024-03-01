@@ -2,7 +2,7 @@ from Angle import Angle
 import math
 
 def Caculate_steps(candidate):
-    flag, number, steps = 0, 0, 0
+    flag, number, steps, knee_right, knee_left  = 0, 0, 0, 0, 0
     if candidate[25].visibility>=0.5 and candidate[23].visibility>=0.5 and candidate[27].visibility>=0.5:
         knee_right=Angle(candidate[25].x,candidate[25].y,candidate[23].x,candidate[23].y,candidate[27].x,candidate[27].y)
     
@@ -39,6 +39,5 @@ def Caculate_steps(candidate):
                 file.write(str(1) + '\n')
             file.write(str(1) + '\n')
             file.write(str(0) + '\n')
-            file.write(str(0) + '\n')
-        print("Steps: 0")
+        print("Total Steps: 0\n")
     return steps

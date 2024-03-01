@@ -3,8 +3,8 @@ import mediapipe as mp
 from Angle import Caculate_angle
 import argparse
 from Correct_angle import correct_angle
-#from Steps import Caculate_steps
-#from pathlib import Path
+from Step_frequency import Calculate_step_frequency
+from pathlib import Path
 
 
 def Photo(f_path):
@@ -68,15 +68,14 @@ def CameraorVideo(f_path):
                 point.y=point.y*(image.shape[0]-1)
                 candidate.append(point)
 
-            image=correct_angle(candidate,image) 
+            image=correct_angle(candidate,image)
             
-            #steps = Caculate_steps(candidate)
-            #current_time = cv2.getTickCount()
-            #elapsed_time = (current_time - start_time) / tick_frequency
-            #Step_frequency = steps/elapsed_time*60 
-            #print('Step_frequency: ' + str(Step_frequency) +'\n')
+            frame_index = int(cap.get(cv2.CAP_PROP_POS_FRAMES))
+            fps = cap.get(cv2.CAP_PROP_FPS)
+            current_time = frame_index / fps
+            Calculate_step_frequency(candidate,current_time)
+            #print(current_time)
             
-
             scalar_factor=0.6
             image=cv2.resize(image,(0,0),fx=scalar_factor,fy=scalar_factor)        
             cv2.imshow('Pose Tracking', image)     
@@ -95,8 +94,7 @@ if __name__=='__main__':
     parser.add_argument('--file')
     arg=parser.parse_args()
     
-    #tick_frequency = cv2.getTickFrequency()
-    #start_time = cv2.getTickCount()
+    start_time = cv2.getTickCount()
     
     if arg.mode=='photo':
         Photo(arg.file)
@@ -104,12 +102,14 @@ if __name__=='__main__':
     if arg.mode=='video':
         CameraorVideo(arg.file)
 
-        #file = Path('Steps.txt')
-        #file.unlink()
+        file = Path('Steps.txt')
+        file.unlink()
 
     
     if arg.mode=='camera':
         CameraorVideo(None)
-
+    #end_time = cv2.getTickCount()
+    #during_time = (end_time-start_time)/cv2.getTickFrequency()
+    #print(during_time)
 
 
