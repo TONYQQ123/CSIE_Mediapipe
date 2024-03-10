@@ -3,6 +3,7 @@ import mediapipe as mp
 from Angle import Caculate_angle
 import argparse
 from Correct_angle import correct_angle
+import time
 
 def Photo(f_path):
     mp_pose = mp.solutions.pose
@@ -65,7 +66,7 @@ def CameraorVideo(f_path):
                 point.y=point.y*(image.shape[0]-1)
                 candidate.append(point)
             image=correct_angle(candidate,image)  
-            scalar_factor=0.6
+            scalar_factor=0.3
             image=cv2.resize(image,(0,0),fx=scalar_factor,fy=scalar_factor)        
             cv2.imshow('Pose Tracking', image)     
             if cv2.waitKey(1) & 0xFF == ord('q'):
@@ -73,7 +74,6 @@ def CameraorVideo(f_path):
     cap.release()
     cv2.destroyAllWindows()
     
-
 
 
 
