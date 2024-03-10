@@ -43,13 +43,13 @@ def Caculate_angle(candidate):
     result=(neck,arm_left,arm_right,knee_left,knee_right)
     print('Arm_left: '+str(arm_left)+'\n')
     print('Arm_right: '+str(arm_right)+'\n')
-    print('knee_right: '+str(knee_right)+'\n')
+    print('knee_left: '+str(knee_left)+'\n')
     print('knee_right: '+str(knee_right)+'\n')
     with open('Angle.txt','a') as file:
-        file.write('neck: '+str(neck)+'\n')
-        file.write('Arm_left: '+str(arm_left)+'\n')
-        file.write('Arm_right: '+str(arm_right)+'\n')
-        file.write('knee_right: '+str(knee_right)+'\n')
-        file.write('knee_right: '+str(knee_right)+'\n')
+        file.write('neck : '+str(neck)+'\n')
+        file.write('Arm_left'+str(arm_left)+'\n')
+        file.write('Arm_right'+str(arm_right)+'\n')
+        file.write('knee_left'+str(knee_left)+'\n')
+        file.write('knee_right'+str(knee_right)+'\n')
 
     return result

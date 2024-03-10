@@ -4,6 +4,9 @@ from Angle import Caculate_angle
 import argparse
 from Correct_angle import correct_angle
 import time
+from Step_frequency import Calculate_step_frequency
+from pathlib import Path
+
 
 def Photo(f_path):
     mp_pose = mp.solutions.pose
@@ -67,6 +70,16 @@ def CameraorVideo(f_path):
                 candidate.append(point)
             image=correct_angle(candidate,image)  
             scalar_factor=0.3
+
+            image=correct_angle(candidate,image)
+            
+            frame_index = int(cap.get(cv2.CAP_PROP_POS_FRAMES))
+            fps = cap.get(cv2.CAP_PROP_FPS)
+            current_time = frame_index / fps
+            Calculate_step_frequency(candidate,current_time)
+            #print(current_time)
+            
+            scalar_factor=0.6
             image=cv2.resize(image,(0,0),fx=scalar_factor,fy=scalar_factor)        
             cv2.imshow('Pose Tracking', image)     
             if cv2.waitKey(1) & 0xFF == ord('q'):
@@ -82,15 +95,23 @@ if __name__=='__main__':
     parser.add_argument('--mode',choices=['photo','video','camera'])
     parser.add_argument('--file')
     arg=parser.parse_args()
-
+    
+    start_time = cv2.getTickCount()
+    
     if arg.mode=='photo':
         Photo(arg.file)
 
     if arg.mode=='video':
         CameraorVideo(arg.file)
+
+        file = Path('Steps.txt')
+        file.unlink()
+
     
     if arg.mode=='camera':
         CameraorVideo(None)
-
+    #end_time = cv2.getTickCount()
+    #during_time = (end_time-start_time)/cv2.getTickFrequency()
+    #print(during_time)
 
 
