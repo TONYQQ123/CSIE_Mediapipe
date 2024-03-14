@@ -17,4 +17,6 @@ account.update_score(100)
 score=account.get_score()
 print(f'New Score: {score}\n')
 
+rank=account.rank()
+print(rank.json())
 account.logout()
