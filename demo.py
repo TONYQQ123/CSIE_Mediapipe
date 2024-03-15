@@ -9,6 +9,7 @@ from pathlib import Path
 from step_length import s_length
 from step_length import s_length
 import time
+
 def Writer(writer_buffer,detail):
     fourcc=cv2.VideoWriter_fourcc(*'mp4v')
     out = cv2.VideoWriter('output.mp4', fourcc, detail['fps'],(int(detail['scalar']*detail['width']), int(detail['scalar']*detail['height'])))
@@ -116,8 +117,9 @@ def CameraorVideo(f_path):
             cv2.imshow('Pose Tracking', image)     
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
-    write_start_time=time.time()   
-    Writer(writer_buffer,video_detail)
+    write_start_time=time.time()
+    if f_path is not None:   
+        Writer(writer_buffer,video_detail)
     write_end_time=time.time()
     print('------------Video Details----------------')
     print(f'Write video spend: {write_end_time-write_start_time}')
