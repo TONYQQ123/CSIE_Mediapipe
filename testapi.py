@@ -10,6 +10,13 @@ account.login('123','456')
 
 result=account.get_account_detail()
 score=account.get_score()
+landmark={
+    'x':100,
+    'y':100
+}
+all_landmark=[]
+all_landmark.append(landmark)
+account.update_all_landmark(all_landmark)
 print(f'\nAccount Detail: \n{result.json()}\n')
 print(f'Score: {score}\n')
 

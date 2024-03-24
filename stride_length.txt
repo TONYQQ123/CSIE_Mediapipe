@@ -288,3 +288,583 @@ the program sta222rt
 the stride_length is 57.20551404848799
 the program sta222rt
 the stride_length is 57.518398456365645
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 60.90195976703237
+the program sta222rt
+the stride_length is 59.7111039146543
+the program sta222rt
+the stride_length is 54.060425642732646
+the program sta222rt
+the stride_length is 54.83121494094399
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 57.36824930476431
+the program sta222rt
+the stride_length is 57.90427946234905
+the program sta222rt
+the stride_length is 55.80657823161307
+the program sta222rt
+the stride_length is 55.457166878843736
+the program sta222rt
+the stride_length is 55.47011853617901
+the program sta222rt
+the stride_length is 55.5685615687342
+the program sta222rt
+the stride_length is 53.973698964714494
+the program sta222rt
+the stride_length is 54.06147551104031
+the program sta222rt
+the program sta222rt
+the stride_length is 51.8014124850884
+the program sta222rt
+the stride_length is 50.982974214581645
+the program sta222rt
+the stride_length is 51.33301737040509
+the program sta222rt
+the stride_length is 50.07590623242754
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 58.06786887995255
+the program sta222rt
+the stride_length is 59.25961434867029
+the program sta222rt
+the stride_length is 58.426553632776006
+the program sta222rt
+the stride_length is 58.55998840133021
+the program sta222rt
+the program sta222rt
+the stride_length is 59.76610137201948
+the program sta222rt
+the stride_length is 59.15916360113572
+the program sta222rt
+the program sta222rt
+the stride_length is 59.63286083032799
+the program sta222rt
+the stride_length is 58.62674200646836
+the program sta222rt
+the stride_length is 58.16944620610584
+the program sta222rt
+the stride_length is 58.210876563293795
+the program sta222rt
+the stride_length is 53.18744688182526
+the program sta222rt
+the stride_length is 52.68249178617111
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 56.8201179214595
+the program sta222rt
+the stride_length is 57.05729558737689
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 56.93607314693822
+the program sta222rt
+the stride_length is 56.81261872917638
+the program sta222rt
+the stride_length is 56.05949763845688
+the program sta222rt
+the stride_length is 55.855401410908044
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 53.87696049577973
+the program sta222rt
+the stride_length is 53.16843546767701
+the program sta222rt
+the program sta222rt
+the stride_length is 51.27601578113977
+the program sta222rt
+the stride_length is 50.84242496745731
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 60.16960611346052
+the program sta222rt
+the stride_length is 60.928955053499706
+the program sta222rt
+the stride_length is 60.60034169005259
+the program sta222rt
+the stride_length is 60.20940957302798
+the program sta222rt
+the program sta222rt
+the stride_length is 59.231969951049635
+the program sta222rt
+the stride_length is 57.97899987232794
+the program sta222rt
+the stride_length is 56.81077557492703
+the program sta222rt
+the stride_length is 56.28903972482136
+the program sta222rt
+the stride_length is 54.09258711022784
+the program sta222rt
+the stride_length is 53.75114577846671
+the program sta222rt
+the stride_length is 51.18609071601027
+the program sta222rt
+the stride_length is 53.11857717393035
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 55.84710908673171
+the program sta222rt
+the stride_length is 56.495133916903704
+the program sta222rt
+the stride_length is 55.405565521146904
+the program sta222rt
+the stride_length is 55.38134001886224
+the program sta222rt
+the program sta222rt
+the stride_length is 54.98250186442755
+the program sta222rt
+the stride_length is 54.80847455423813
+the program sta222rt
+the program sta222rt
+the stride_length is 52.82417458559719
+the program sta222rt
+the stride_length is 51.783104975925184
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 58.838355353146156
+the program sta222rt
+the stride_length is 58.37480479774247
+the program sta222rt
+the program sta222rt
+the stride_length is 60.48296654848231
+the program sta222rt
+the stride_length is 60.74223350716481
+the program sta222rt
+the program sta222rt
+the stride_length is 58.92696545453429
+the program sta222rt
+the stride_length is 58.33791641815505
+the program sta222rt
+the stride_length is 58.695105983292876
+the program sta222rt
+the stride_length is 57.90923860286605
+the program sta222rt
+the stride_length is 53.578183657409134
+the program sta222rt
+the stride_length is 53.11477579159291
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 57.860961817528604
+the program sta222rt
+the stride_length is 57.77353885452972
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 59.69988544527739
+the program sta222rt
+the stride_length is 59.38683743438395
+the program sta222rt
+the stride_length is 59.10717055178298
+the program sta222rt
+the stride_length is 58.65423527260722
+the program sta222rt
+the stride_length is 55.7854525148571
+the program sta222rt
+the stride_length is 54.781288737594224
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 51.16228558152946
+the program sta222rt
+the stride_length is 50.924276371204115
+the program sta222rt
+the stride_length is 49.78189267693477
+the program sta222rt
+the stride_length is 50.32426142402242
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 58.45347619769757
+the program sta222rt
+the stride_length is 59.337146478987954
+the program sta222rt
+the stride_length is 57.23375654759566
+the program sta222rt
+the stride_length is 57.432329530246456
+the program sta222rt
+the stride_length is 57.40957022314926
+the program sta222rt
+the stride_length is 56.977799678585605
+the program sta222rt
+the stride_length is 54.46943886327193
+the program sta222rt
+the stride_length is 54.63880352284023
+the program sta222rt
+the stride_length is 53.479040427449654
+the program sta222rt
+the stride_length is 53.27502355375824
+the program sta222rt
+the stride_length is 48.95363845085119
+the program sta222rt
+the stride_length is 48.42600056763172
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 47.5973807475718
+the program sta222rt
+the stride_length is 49.53989381101826
+the program sta222rt
+the program sta222rt
+the stride_length is 49.83823454832008
+the program sta222rt
+the stride_length is 50.6161461729364
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 51.17809206262059
+the program sta222rt
+the stride_length is 51.071041840006
+the program sta222rt
+the stride_length is 49.38511619525003
+the program sta222rt
+the stride_length is 50.180977290864064
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 46.40332400444316
+the program sta222rt
+the stride_length is 46.012798653328126
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 45.02439395571326
+the program sta222rt
+the stride_length is 45.22087635092417
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 57.20551404848799
+the program sta222rt
+the stride_length is 57.518398456365645
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 60.90195976703237
+the program sta222rt
+the stride_length is 59.7111039146543
+the program sta222rt
+the stride_length is 54.060425642732646
+the program sta222rt
+the stride_length is 54.83121494094399
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 57.36824930476431
+the program sta222rt
+the stride_length is 57.90427946234905
+the program sta222rt
+the stride_length is 55.80657823161307
+the program sta222rt
+the stride_length is 55.457166878843736
+the program sta222rt
+the stride_length is 55.47011853617901
+the program sta222rt
+the stride_length is 55.5685615687342
+the program sta222rt
+the stride_length is 53.973698964714494
+the program sta222rt
+the stride_length is 54.06147551104031
+the program sta222rt
+the program sta222rt
+the stride_length is 51.8014124850884
+the program sta222rt
+the stride_length is 50.982974214581645
+the program sta222rt
+the stride_length is 51.33301737040509
+the program sta222rt
+the stride_length is 50.07590623242754
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 58.06786887995255
+the program sta222rt
+the stride_length is 59.25961434867029
+the program sta222rt
+the stride_length is 58.426553632776006
+the program sta222rt
+the stride_length is 58.55998840133021
+the program sta222rt
+the program sta222rt
+the stride_length is 59.76610137201948
+the program sta222rt
+the stride_length is 59.15916360113572
+the program sta222rt
+the program sta222rt
+the stride_length is 59.63286083032799
+the program sta222rt
+the stride_length is 58.62674200646836
+the program sta222rt
+the stride_length is 58.16944620610584
+the program sta222rt
+the stride_length is 58.210876563293795
+the program sta222rt
+the stride_length is 53.18744688182526
+the program sta222rt
+the stride_length is 52.68249178617111
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 56.8201179214595
+the program sta222rt
+the stride_length is 57.05729558737689
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 56.93607314693822
+the program sta222rt
+the stride_length is 56.81261872917638
+the program sta222rt
+the stride_length is 56.05949763845688
+the program sta222rt
+the stride_length is 55.855401410908044
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 53.87696049577973
+the program sta222rt
+the stride_length is 53.16843546767701
+the program sta222rt
+the program sta222rt
+the stride_length is 51.27601578113977
+the program sta222rt
+the stride_length is 50.84242496745731
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 60.16960611346052
+the program sta222rt
+the stride_length is 60.928955053499706
+the program sta222rt
+the stride_length is 60.60034169005259
+the program sta222rt
+the stride_length is 60.20940957302798
+the program sta222rt
+the program sta222rt
+the stride_length is 59.231969951049635
+the program sta222rt
+the stride_length is 57.97899987232794
+the program sta222rt
+the stride_length is 56.81077557492703
+the program sta222rt
+the stride_length is 56.28903972482136
+the program sta222rt
+the stride_length is 54.09258711022784
+the program sta222rt
+the stride_length is 53.75114577846671
+the program sta222rt
+the stride_length is 51.18609071601027
+the program sta222rt
+the stride_length is 53.11857717393035
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 55.84710908673171
+the program sta222rt
+the stride_length is 56.495133916903704
+the program sta222rt
+the stride_length is 55.405565521146904
+the program sta222rt
+the stride_length is 55.38134001886224
+the program sta222rt
+the program sta222rt
+the stride_length is 54.98250186442755
+the program sta222rt
+the stride_length is 54.80847455423813
+the program sta222rt
+the program sta222rt
+the stride_length is 52.82417458559719
+the program sta222rt
+the stride_length is 51.783104975925184
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 58.838355353146156
+the program sta222rt
+the stride_length is 58.37480479774247
+the program sta222rt
+the program sta222rt
+the stride_length is 60.48296654848231
+the program sta222rt
+the stride_length is 60.74223350716481
+the program sta222rt
+the program sta222rt
+the stride_length is 58.92696545453429
+the program sta222rt
+the stride_length is 58.33791641815505
+the program sta222rt
+the stride_length is 58.695105983292876
+the program sta222rt
+the stride_length is 57.90923860286605
+the program sta222rt
+the stride_length is 53.578183657409134
+the program sta222rt
+the stride_length is 53.11477579159291
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 57.860961817528604
+the program sta222rt
+the stride_length is 57.77353885452972
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 59.69988544527739
+the program sta222rt
+the stride_length is 59.38683743438395
+the program sta222rt
+the stride_length is 59.10717055178298
+the program sta222rt
+the stride_length is 58.65423527260722
+the program sta222rt
+the stride_length is 55.7854525148571
+the program sta222rt
+the stride_length is 54.781288737594224
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 51.16228558152946
+the program sta222rt
+the stride_length is 50.924276371204115
+the program sta222rt
+the stride_length is 49.78189267693477
+the program sta222rt
+the stride_length is 50.32426142402242
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 58.45347619769757
+the program sta222rt
+the stride_length is 59.337146478987954
+the program sta222rt
+the stride_length is 57.23375654759566
+the program sta222rt
+the stride_length is 57.432329530246456
+the program sta222rt
+the stride_length is 57.40957022314926
+the program sta222rt
+the stride_length is 56.977799678585605
+the program sta222rt
+the stride_length is 54.46943886327193
+the program sta222rt
+the stride_length is 54.63880352284023
+the program sta222rt
+the stride_length is 53.479040427449654
+the program sta222rt
+the stride_length is 53.27502355375824
+the program sta222rt
+the stride_length is 48.95363845085119
+the program sta222rt
+the stride_length is 48.42600056763172
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 47.5973807475718
+the program sta222rt
+the stride_length is 49.53989381101826
+the program sta222rt
+the program sta222rt
+the stride_length is 49.83823454832008
+the program sta222rt
+the stride_length is 50.6161461729364
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 51.17809206262059
+the program sta222rt
+the stride_length is 51.071041840006
+the program sta222rt
+the stride_length is 49.38511619525003
+the program sta222rt
+the stride_length is 50.180977290864064
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 46.40332400444316
+the program sta222rt
+the stride_length is 46.012798653328126
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 45.02439395571326
+the program sta222rt
+the stride_length is 45.22087635092417
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the program sta222rt
+the stride_length is 57.20551404848799
+the program sta222rt
+the stride_length is 57.518398456365645

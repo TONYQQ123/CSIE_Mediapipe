@@ -120,6 +120,17 @@ class accountAPI(base_account):
             return None
         else:
             return response
+    
+    def update_all_landmark(self,data):
+        url=self.url+'landmark/'
+        response=requests.put(url,json=data)
+        if response.status_code==200:
+            print(response.json().get('message'))
+        else:
+            print(response.json().get('error'))
+        return response
+
+
 
 
             

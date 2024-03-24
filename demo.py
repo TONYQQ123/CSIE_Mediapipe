@@ -9,6 +9,7 @@ from pathlib import Path
 from step_length import s_length
 from step_length import s_length
 import time
+import json
 def Writer(writer_buffer,detail):
     fourcc=cv2.VideoWriter_fourcc(*'mp4v')
     out = cv2.VideoWriter('output.mp4', fourcc, detail['fps'],(int(detail['scalar']*detail['width']), int(detail['scalar']*detail['height'])))
@@ -48,14 +49,16 @@ def Photo(f_path):
     cv2.destroyAllWindows()
 
 
-def CameraorVideo(f_path):
+def CameraorVideo(f_path,config):
     direction = 1
     left_limit = 0
     right_limit = 0
     
     scalar_factor=0.6
     writer_buffer=[]
+    Landmark_Data=[]
     video_detail={}
+    deduction=0
     if f_path is not None:
         cap=cv2.VideoCapture(f_path)
     else:
@@ -63,6 +66,8 @@ def CameraorVideo(f_path):
     
     mp_pose=mp.solutions.pose
     mp_drawing=mp.solutions.drawing_utils
+
+    start_run=time.time()
 
     with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
         while cap.isOpened():
@@ -86,6 +91,7 @@ def CameraorVideo(f_path):
             image.flags.writeable = False
             
             results = pose.process(image)
+            Landmark_Data.append(results)
             
             image.flags.writeable = True
             image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
@@ -98,10 +104,11 @@ def CameraorVideo(f_path):
                 point.x=point.x*(image.shape[1]-1)
                 point.y=point.y*(image.shape[0]-1)
                 candidate.append(point)
-            image=correct_angle(candidate,image)  
+            temp=correct_angle(candidate,image)  
+            image=temp[0]
+            deduction+=temp[1]
             scalar_factor=0.3
 
-            image=correct_angle(candidate,image)
             direction,left_limlt,right_limit,slength=s_length(candidate,direction,left_limit,right_limit)
             frame_index = int(cap.get(cv2.CAP_PROP_POS_FRAMES))
             fps = cap.get(cv2.CAP_PROP_FPS)
@@ -116,23 +123,23 @@ def CameraorVideo(f_path):
             cv2.imshow('Pose Tracking', image)     
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
-    write_start_time=time.time()   
-    Writer(writer_buffer,video_detail)
-    write_end_time=time.time()
+    end_run=time.time()
+    run_duration=(end_run-start_run)
+    points=int(run_duration)*config['reward']-deduction
     print('------------Video Details----------------')
-    print(f'Write video spend: {write_end_time-write_start_time}')
     print(f'fps: {video_detail["fps"]}\norigin video length: {video_detail["duration"]}\ntotal_frame: {video_detail["total_frame"]}')
     cap.release()
     cv2.destroyAllWindows()
     
 
-
-
-if __name__=='__main__':
+def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--mode',choices=['photo','video','camera'])
     parser.add_argument('--file')
     arg=parser.parse_args()
+
+    with open('config.json') as f:
+        config=json.load(f)
     
     start_time = cv2.getTickCount()
     s_time = time.time()
@@ -141,18 +148,24 @@ if __name__=='__main__':
         Photo(arg.file)
 
     if arg.mode=='video':
-        CameraorVideo(arg.file)
+        CameraorVideo(arg.file,config)
         file = Path('Steps.txt')
         file.unlink()
 
     
     if arg.mode=='camera':
-        CameraorVideo(None)
+        CameraorVideo(None,config)
     end_time = cv2.getTickCount()
     e_time = time.time()
     during_time = (end_time-start_time)/cv2.getTickFrequency()
     print(during_time)
     print(f'Total time: {e_time-s_time}')
     print('-------------------------------------')
+
+
+
+
+if __name__=='__main__':
+    main()
 
 

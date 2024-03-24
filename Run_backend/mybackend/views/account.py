@@ -15,6 +15,20 @@ def set_user_cache(user):
 def get_user_cache():
     return cache.get('user_cache')
 
+@csrf_exempt
+def update_all_landmark(request):
+    if request.method=='PUT':
+        user=get_user_cache()
+        data=json.loads(request.body)
+        if not isinstance(data,list):
+            return JsonResponse({'error':'Bad request'},status=400)
+        if user is not None:
+            user.all_landmark=data
+            user.save()
+            set_user_cache(user)
+            return JsonResponse({'message':'update landmark'},status=200)
+    return JsonResponse({'error':'update landmark failed'},status=400)
+
 
 @csrf_exempt
 def update_information(request):
