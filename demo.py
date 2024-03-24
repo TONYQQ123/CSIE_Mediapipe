@@ -126,6 +126,10 @@ def CameraorVideo(f_path,config):
     end_run=time.time()
     run_duration=(end_run-start_run)
     points=int(run_duration)*config['reward']-deduction
+    write_start_time=time.time()
+    if f_path is not None:   
+        Writer(writer_buffer,video_detail)
+    write_end_time=time.time()
     print('------------Video Details----------------')
     print(f'fps: {video_detail["fps"]}\norigin video length: {video_detail["duration"]}\ntotal_frame: {video_detail["total_frame"]}')
     cap.release()

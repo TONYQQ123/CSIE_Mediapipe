@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>665</width>
-    <height>454</height>
+    <width>741</width>
+    <height>552</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -51,7 +51,7 @@
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>40</width>
+       <width>20</width>
        <height>20</height>
       </size>
      </property>
@@ -80,6 +80,22 @@
         </widget>
        </item>
       </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>50</height>
+        </size>
+       </property>
+      </spacer>
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
@@ -112,6 +128,12 @@
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
         <widget class="QLabel" name="label_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>Date of birth:</string>
          </property>
@@ -121,15 +143,18 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit">
+        <widget class="QDateEdit" name="Date_of_birth">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
-         <property name="readOnly">
-          <bool>true</bool>
+         <property name="minimumSize">
+          <size>
+           <width>132</width>
+           <height>0</height>
+          </size>
          </property>
         </widget>
        </item>
@@ -148,7 +173,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_2">
+        <widget class="QLineEdit" name="Height">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -175,7 +200,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_3">
+        <widget class="QLineEdit" name="Weight">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -208,7 +233,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_4">
+        <widget class="QLineEdit" name="Total_Run">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -235,7 +260,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_5">
+        <widget class="QLineEdit" name="Total_Time">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -262,7 +287,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_6">
+        <widget class="QLineEdit" name="Total_Run_time">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -275,6 +300,22 @@
         </widget>
        </item>
       </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>30</height>
+        </size>
+       </property>
+      </spacer>
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_8">
@@ -293,6 +334,19 @@
        </item>
       </layout>
      </item>
+     <item>
+      <spacer name="verticalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
     </layout>
    </item>
    <item>
@@ -302,7 +356,7 @@
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>40</width>
+       <width>20</width>
        <height>20</height>
       </size>
      </property>
