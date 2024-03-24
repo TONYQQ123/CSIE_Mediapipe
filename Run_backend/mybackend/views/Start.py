@@ -17,3 +17,5 @@ def get_rank(request):
         }
         return JsonResponse(data, status=200)
     return JsonResponse({'error': 'get rank failed'}, status=400)
+
+

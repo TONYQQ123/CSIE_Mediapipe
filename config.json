@@ -1,11 +1,14 @@
 {
-    "Angle":[
-        {
-            "Neck":[10,20],
-            "Knee_left":[10,20],
-            "Knee_right":[10,20],
-            "Arm_left":[10,20],
-            "Arm_right":[10,20]
-        }
-    ]
+    "Neck":[10,20],
+    "Knee_left":[10,20],
+    "Knee_right":[10,20],
+    "Arm_left":[10,20],
+    "Arm_right":[10,20],
+    "Neck_weight":1,
+    "Knee_left_weight":1,
+    "Knee_right_weight":1,
+    "Arm_left_weight":1,
+    "Arm_right_weight":1,
+    "deduction":100,
+    "reward":50
 }

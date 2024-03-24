@@ -35,25 +35,31 @@ def check_angle(candidate,config,image):
     flag_armL=False
     flag_kneeL=False
     flag_kneeR=False
+
+    deduction=0
     
     if neck>=max(config['Neck']) or neck<=min(config['Neck']):
         flag_neck=True
+        deduction+=config['deduction']*config['Neck_weight']
     if arm_left>=max(config['Arm_left']) or arm_left<=min(config['Arm_left']):
         flag_armL=True
+        deduction+=config['deduction']*config['Arm_left_weight']
     if arm_right>=max(config['Arm_right']) or arm_right<=min(config['Arm_right']):
         flag_armR=True
+        deduction+=config['deduction']*config['Arm_right_weight']
     if knee_left>=max(config['Knee_left']) or knee_left<=min(config['Knee_left']):
         flag_kneeL=True
+        deduction+=config['deduction']*config['Knee_left_weight']
     if knee_right>=max(config['Knee_right']) or knee_right<=min(config['Knee_right']):
         flag_kneeR=True
+        deduction+=config['deduction']*config['Knee_right_weight']
     flag=[flag_neck,flag_kneeR,flag_kneeL,flag_armL,flag_armR]
     if any(flag):
-        return draw_correct_angle(flag,candidate,image)
-    return image
+        return (draw_correct_angle(flag,candidate,image),deduction)
+    return (image,deduction)
 
 
 def correct_angle(candidate,image):
     with open('config.json') as file:
         config=json.load(file)
-    Angle_config=config['Angle'][0]
-    return check_angle(candidate,Angle_config,image)
+    return check_angle(candidate,config,image)

@@ -8,6 +8,8 @@
     <y>0</y>
     <width>960</width>
     <height>540</height>
+    <width>741</width>
+    <height>552</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -147,6 +149,7 @@
         <size>
          <width>20</width>
          <height>40</height>
+         <height>50</height>
         </size>
        </property>
       </spacer>
@@ -213,6 +216,7 @@
        </item>
        <item>
         <widget class="QLineEdit" name="born">
+        <widget class="QDateEdit" name="Date_of_birth">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -226,6 +230,11 @@
          </property>
          <property name="readOnly">
           <bool>true</bool>
+         <property name="minimumSize">
+          <size>
+           <width>132</width>
+           <height>0</height>
+          </size>
          </property>
         </widget>
        </item>
@@ -287,6 +296,7 @@
        </item>
        <item>
         <widget class="QLineEdit" name="weight">
+        <widget class="QLineEdit" name="Weight">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -330,6 +340,7 @@
        </item>
        <item>
         <widget class="QLineEdit" name="score">
+        <widget class="QLineEdit" name="Total_Run">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -367,6 +378,7 @@
        </item>
        <item>
         <widget class="QLineEdit" name="distance">
+        <widget class="QLineEdit" name="Total_Time">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -404,6 +416,7 @@
        </item>
        <item>
         <widget class="QLineEdit" name="spend_time">
+        <widget class="QLineEdit" name="Total_Run_time">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -439,6 +452,7 @@
         <size>
          <width>20</width>
          <height>40</height>
+         <height>30</height>
         </size>
        </property>
       </spacer>

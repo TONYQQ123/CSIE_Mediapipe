@@ -2,6 +2,8 @@
 <ui version="4.0">
  <class>QWidget</class>
  <widget class="QWidget" name="QWidget">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -35,6 +37,12 @@
   </property>
   <property name="windowTitle">
    <string>Activity</string>
+    <width>649</width>
+    <height>486</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_4">
    <item>
@@ -74,6 +82,9 @@
        <property name="sizeHint" stdset="0">
         <size>
          <width>230</width>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>153</width>
          <height>20</height>
         </size>
        </property>
@@ -93,6 +104,7 @@
           <size>
            <width>20</width>
            <height>10</height>
+           <height>30</height>
           </size>
          </property>
         </spacer>
@@ -110,6 +122,7 @@
            <property name="font">
             <font>
              <pointsize>20</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="text">
@@ -120,10 +133,28 @@
         </layout>
        </item>
        <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+>>>>>>> d6014ff3aa7327975f7221694a119e9125cc3e90
         <layout class="QHBoxLayout" name="horizontalLayout_5">
          <item>
           <layout class="QVBoxLayout" name="verticalLayout_2">
            <item>
+<<<<<<< HEAD
             <widget class="QDateEdit" name="date1">
              <property name="readOnly">
               <bool>false</bool>
@@ -153,6 +184,12 @@
               </widget>
              </item>
             </layout>
+=======
+            <widget class="QDateEdit" name="date1"/>
+           </item>
+           <item>
+            <widget class="QDateEdit" name="date2"/>
+>>>>>>> d6014ff3aa7327975f7221694a119e9125cc3e90
            </item>
           </layout>
          </item>
@@ -178,13 +215,15 @@
             <layout class="QHBoxLayout" name="horizontalLayout">
              <item>
               <widget class="QLabel" name="label_2">
-               <property name="text">
+               <property name="text">r
                 <string>Distance:</string>
+                <string>Total Run:</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QLineEdit" name="distance">
+              <widget class="QLineEdit" name="Total_Run">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                  <horstretch>0</horstretch>
@@ -204,11 +243,13 @@
               <widget class="QLabel" name="label_3">
                <property name="text">
                 <string>Spend time</string>
+                <string>Total Time:</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QLineEdit" name="spend_time">
+              <widget class="QLineEdit" name="Total_Time">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                  <horstretch>0</horstretch>
@@ -228,11 +269,13 @@
               <widget class="QLabel" name="label_4">
                <property name="text">
                 <string>Run time:</string>
+                <string>Total Run time:</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QLineEdit" name="Run_time">
+              <widget class="QLineEdit" name="Total_Run_time">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                  <horstretch>0</horstretch>
@@ -254,6 +297,25 @@
         <layout class="QHBoxLayout" name="horizontalLayout_8">
          <item>
           <widget class="QPushButton" name="previous_photo">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>30</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QPushButton" name="up">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
              <horstretch>0</horstretch>
@@ -267,6 +329,7 @@
          </item>
          <item>
           <widget class="QPushButton" name="next_photo">
+          <widget class="QPushButton" name="down">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
              <horstretch>0</horstretch>
@@ -290,6 +353,7 @@
        <property name="sizeHint" stdset="0">
         <size>
          <width>250</width>
+         <width>153</width>
          <height>20</height>
         </size>
        </property>
@@ -325,6 +389,7 @@
       </widget>
      </item>
     </layout>
+    <widget class="QGraphicsView" name="photo"/>
    </item>
   </layout>
  </widget>

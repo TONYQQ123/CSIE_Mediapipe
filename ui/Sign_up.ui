@@ -2,6 +2,8 @@
 <ui version="4.0">
  <class>QWidget</class>
  <widget class="QWidget" name="QWidget">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -30,6 +32,12 @@
   </property>
   <property name="windowTitle">
    <string>Sign up</string>
+    <width>873</width>
+    <height>587</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_4">
    <item>
@@ -105,6 +113,7 @@
          <property name="font">
           <font>
            <pointsize>20</pointsize>
+           <pointsize>14</pointsize>
           </font>
          </property>
          <property name="text">
@@ -126,6 +135,7 @@
         <size>
          <width>20</width>
          <height>40</height>
+         <height>20</height>
         </size>
        </property>
       </spacer>
@@ -147,11 +157,17 @@
          </property>
          <property name="text">
           <string>Username:</string>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Account:</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="username">
+        <widget class="QLineEdit" name="Account">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -310,11 +326,15 @@
          </property>
          <property name="text">
           <string>Weight:</string>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Password:</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="weight">
+        <widget class="QLineEdit" name="Password">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
