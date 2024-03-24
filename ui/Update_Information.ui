@@ -197,7 +197,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="Weight">
+        <widget class="QLineEdit" name="weight">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -253,7 +253,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QDateEdit" name="dateEdit">
+        <widget class="QDateEdit" name="born">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>

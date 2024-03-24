@@ -153,12 +153,12 @@
             </font>
            </property>
            <property name="text">
-            <string>current ranking : </string>
+            <string>current rank : </string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="current_ranking">
+          <widget class="QLineEdit" name="current_rank">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
              <horstretch>0</horstretch>

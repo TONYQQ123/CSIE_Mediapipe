@@ -161,7 +161,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Name:</string>
+          <string>Username:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -169,7 +169,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="name">
+        <widget class="QLineEdit" name="username">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -249,7 +249,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="height">
+        <widget class="QLineEdit" name="Height">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
