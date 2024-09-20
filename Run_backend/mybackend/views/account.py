@@ -16,6 +16,20 @@ def get_user_cache():
     return cache.get('user_cache')
 
 @csrf_exempt
+def update_video_detail(request):
+    if request.method=='PUT':
+        user=get_user_cache()
+        data=json.loads(request.body)
+        if not isinstance(data,dict):
+            return JsonResponse({'error':'Bad request'},status=400)
+        if user is not None:
+            user.video_detail=data
+            user.save()
+            set_user_cache(user)
+            return JsonResponse({'message':'update detail'},status=200)
+    return JsonResponse({'error':'update detail failed'},status=400)
+    
+@csrf_exempt
 def update_all_landmark(request):
     if request.method=='PUT':
         user=get_user_cache()
@@ -23,7 +37,7 @@ def update_all_landmark(request):
         if not isinstance(data,list):
             return JsonResponse({'error':'Bad request'},status=400)
         if user is not None:
-            user.all_landmark=data
+            user.all_landmarks=data
             user.save()
             set_user_cache(user)
             return JsonResponse({'message':'update landmark'},status=200)

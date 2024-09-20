@@ -312,7 +312,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="first_name">
+            <widget class="QLineEdit" name="rank1_name">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -330,7 +330,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="first_score">
+            <widget class="QLineEdit" name="rank1_score">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -364,7 +364,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="second_name">
+            <widget class="QLineEdit" name="rank2_name">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -382,7 +382,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="second_score">
+            <widget class="QLineEdit" name="rank2_score">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -416,7 +416,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="third_name">
+            <widget class="QLineEdit" name="rank3_name">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -434,7 +434,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="third_score">
+            <widget class="QLineEdit" name="rank3_score">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -468,7 +468,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="fourth_name">
+            <widget class="QLineEdit" name="rank4_name">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -486,7 +486,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="fourth_score">
+            <widget class="QLineEdit" name="rank4_score">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -520,7 +520,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="fifth_name">
+            <widget class="QLineEdit" name="rank5_name">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -538,7 +538,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="fifth_score">
+            <widget class="QLineEdit" name="rank5_score">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -572,7 +572,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="sixth_name">
+            <widget class="QLineEdit" name="rank6_name">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -590,7 +590,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="six_score">
+            <widget class="QLineEdit" name="rank6_score">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -624,7 +624,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="seventh_name">
+            <widget class="QLineEdit" name="rank7_name">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -642,7 +642,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="seventh_score">
+            <widget class="QLineEdit" name="rank7_score">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -676,7 +676,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="eighth_name">
+            <widget class="QLineEdit" name="rank8_name">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -694,7 +694,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="eigth_score">
+            <widget class="QLineEdit" name="rank8_score">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -728,7 +728,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="ninth_name">
+            <widget class="QLineEdit" name="rank9_name">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -746,7 +746,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="ninth_score">
+            <widget class="QLineEdit" name="rank9_score">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -780,7 +780,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="tenth_name">
+            <widget class="QLineEdit" name="rank10_name">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -798,7 +798,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="tenth_score">
+            <widget class="QLineEdit" name="rank10_score">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                <horstretch>0</horstretch>

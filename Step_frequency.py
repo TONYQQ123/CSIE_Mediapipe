@@ -1,11 +1,9 @@
-from Steps import Caculate_steps
-import cv2
+from Steps import Calculate_steps
 
-def Calculate_step_frequency(candidate,current_time):
-    Steps = Caculate_steps(candidate)
+def Calculate_step_frequency(candidate, current_time, array, steps,flags,image):
+    Steps , flags = Calculate_steps(candidate, array, steps,flags,image)
     Step_frequency = Steps / current_time * 60
-    with open('Step_frequency.txt','w') as file:
-        file.write(f"{Steps}\n")
-        file.write(f"{Step_frequency}\n")
-    print('Step_frequency: ' + str(Step_frequency) + '\n')
-    return Step_frequency
+
+    #print('Step_frequency: ' + str(Step_frequency) + '\n')
+    return Step_frequency , flags
+

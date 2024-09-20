@@ -8,7 +8,7 @@ account=api(url)
 
 account.login('123','456')
 
-result=account.get_account_detail()
+
 score=account.get_score()
 landmark={
     'x':100,
@@ -16,8 +16,8 @@ landmark={
 }
 all_landmark=[]
 all_landmark.append(landmark)
-account.update_all_landmark(all_landmark)
-print(f'\nAccount Detail: \n{result.json()}\n')
+a=account.update_all_landmark(all_landmark)
+
 print(f'Score: {score}\n')
 
 account.update_score(100)
@@ -26,4 +26,11 @@ print(f'New Score: {score}\n')
 
 rank=account.rank()
 print(rank.json())
+
+detail={}
+detail['test']='Hi!!!!!!!!!!!!'
+dt=account.update_video_detail(data=detail)
+print(dt)
+result=account.get_account_detail()
+print(f'\nAccount Detail: \n{result.json()}\n')
 account.logout()

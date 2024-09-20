@@ -8,9 +8,14 @@ def get_rank(request):
     if request.method == 'GET':
         user = account.get_user_cache()
         username = user.username
-        rank = Account.objects.order_by('score')
-        current_rank = rank.filter(username=username).count() + 1
-        top_10 = list(rank.values()[:10])  # 转换为列表
+        rank = Account.objects.order_by('-score')
+        temp=1
+        for u in rank:
+            if u.username==username:
+                break
+            temp+=1
+        current_rank = temp
+        top_10 = list(rank.values()[:10])  
         data = {
             "top_10": top_10,
             "current_rank": current_rank

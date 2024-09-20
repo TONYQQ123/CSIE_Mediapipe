@@ -11,3 +11,4 @@ class Account(User):
     height = models.FloatField(default=170, validators=[MaxValueValidator(250), MinValueValidator(70)])
     weight = models.FloatField(default=70, validators=[MaxValueValidator(300), MinValueValidator(30)])
     all_landmarks=models.JSONField(default=list,null=True)
+    video_detail=models.JSONField(default={})

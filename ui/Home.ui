@@ -2,8 +2,6 @@
 <ui version="4.0">
  <class>QWidget</class>
  <widget class="QWidget" name="QWidget">
- <class>Form</class>
- <widget class="QWidget" name="Form">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -37,12 +35,6 @@
   </property>
   <property name="windowTitle">
    <string>Home</string>
-    <width>400</width>
-    <height>300</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>Form</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
@@ -91,7 +83,6 @@
            <property name="font">
             <font>
              <pointsize>20</pointsize>
-             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="text">
@@ -156,38 +147,6 @@
             </widget>
            </item>
           </layout>
-          <widget class="QPushButton" name="pushButton">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>Run Detect</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_2">
-           <property name="text">
-            <string>Information</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_4">
-           <property name="text">
-            <string>Rank</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_3">
-           <property name="text">
-            <string>Activity</string>
-           </property>
-          </widget>
          </item>
         </layout>
        </item>

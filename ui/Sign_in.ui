@@ -8,8 +8,6 @@
     <y>0</y>
     <width>640</width>
     <height>360</height>
-    <width>693</width>
-    <height>532</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -55,7 +53,6 @@
         <size>
          <width>20</width>
          <height>40</height>
-         <height>50</height>
         </size>
        </property>
       </spacer>
@@ -77,11 +74,6 @@
          </property>
          <property name="text">
           <string>Sign in</string>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Login</string>
          </property>
         </widget>
        </item>
@@ -99,7 +91,6 @@
         <size>
          <width>20</width>
          <height>40</height>
-         <height>20</height>
         </size>
        </property>
       </spacer>
@@ -136,8 +127,6 @@
            </property>
            <property name="text">
             <string>Username:</string>
-           <property name="text">
-            <string>Account:</string>
            </property>
           </widget>
          </item>
@@ -155,7 +144,6 @@
             </font>
            </property>
           </widget>
-          <widget class="QLineEdit" name="Account"/>
          </item>
          <item>
           <spacer name="horizontalSpacer_2">
@@ -222,7 +210,6 @@
             <enum>QLineEdit::Password</enum>
            </property>
           </widget>
-          <widget class="QLineEdit" name="Password"/>
          </item>
          <item>
           <spacer name="horizontalSpacer_4">
@@ -253,7 +240,6 @@
         <size>
          <width>20</width>
          <height>40</height>
-         <height>10</height>
         </size>
        </property>
       </spacer>
@@ -262,7 +248,6 @@
       <layout class="QHBoxLayout" name="horizontalLayout_5">
        <item>
         <widget class="QPushButton" name="sign_up">
-        <widget class="QPushButton" name="Sign_up">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -276,14 +261,11 @@
          </property>
          <property name="text">
           <string>Sign_up</string>
-         <property name="text">
-          <string>Sign up</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="log_in">
-        <widget class="QPushButton" name="Sign_in">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -297,9 +279,6 @@
          </property>
          <property name="text">
           <string>Log in</string>
-         </property>
-         <property name="text">
-          <string>Sign in</string>
          </property>
         </widget>
        </item>

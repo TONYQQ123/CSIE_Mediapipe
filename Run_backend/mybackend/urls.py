@@ -13,4 +13,5 @@ urlpatterns=[
     path('api/information/',account.update_information),
     path('api/rank/',Start.get_rank),
     path('api/landmark/',account.update_all_landmark),
+    path('api/video_detail/',account.update_video_detail),
 ]

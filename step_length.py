@@ -5,11 +5,11 @@ import math
 #direction is diction1
 #left_limit is lelim
 #right_limit is rilim
-def s_length(candidate,diction1,lelim,rilim):
+def s_length(candidate,diction1,lelim,rilim,step):
 	if lelim is None:
-	    lelim = 0
-	    direction = 1
-	    rilim = 1
+		lelim = 0
+		direction = 1
+		rilim = 1
 	m = candidate[28].x #right foot x coodit
 	n = candidate[28].y #right foot y coodit
 	direction=diction1
@@ -36,8 +36,8 @@ def s_length(candidate,diction1,lelim,rilim):
 	#left_limit_y, right_limit_y = n, n
 	#direction = 1  # turn right is 1, turn left is -1
 	with open('stride_length.txt','a') as file:
-	    file.write('the program sta222rt'+'\n')
-	print(m, n)
+		file.write('the program sta222rt'+'\n')
+	#print(m, n)
 	#while m != 0 and n != 0:
 	    #m, n = map(int, input().split())
 	if direction == 1:
@@ -46,10 +46,12 @@ def s_length(candidate,diction1,lelim,rilim):
 			stride_length = right_limit_x - left_limit_x
 			stride_length_r = stride_length * px
 			with open('stride_length.txt','a') as file:
-			    file.write('the stride_length is '+str(stride_length_r)+'\n')
-			print("此次步輻為PX", stride_length_r)
+				file.write('the stride_length is '+str(stride_length_r)+'\n')
+			#print("此次步輻為PX", stride_length_r)
+			step = step +1
+			#print("now step is ",step)
 			# candidate[10][0]= left foot x coodit
-			print("TWO FOOT DISTANCE",math.sqrt((candidate[28].x-candidate[27].x)*(candidate[28].x-candidate[27].x)+(candidate[28].y-candidate[27].y)*(candidate[28].y-candidate[27].y))/px)
+			#print("TWO FOOT DISTANCE",math.sqrt((candidate[28].x-candidate[27].x)*(candidate[28].x-candidate[27].x)+(candidate[28].y-candidate[27].y)*(candidate[28].y-candidate[27].y))/px)
 			stride_length = 0
 			left_limit_x = m
 		else:
@@ -60,22 +62,24 @@ def s_length(candidate,diction1,lelim,rilim):
 			stride_length = right_limit_x - left_limit_x
 			stride_length_r = stride_length * px
 			with open('stride_length.txt','a') as file:
-			    file.write('the stride_length is '+str(stride_length_r)+'\n')
-			print("此次步輻為PX", stride_length_r)
-			print("TWO FOOT DISTANCE",math.sqrt((candidate[28].x-candidate[27].x)*(candidate[28].x-candidate[27].x)+(candidate[28].y-candidate[27].y)*(candidate[28].y-candidate[27].y))/px)
+				file.write('the stride_length is '+str(stride_length_r)+'\n')
+			#print("此次步輻為PX", stride_length_r)
+			step = step +1
+			#print("now step is ",step)
+			#print("TWO FOOT DISTANCE",math.sqrt((candidate[28].x-candidate[27].x)*(candidate[28].x-candidate[27].x)+(candidate[28].y-candidate[27].y)*(candidate[28].y-candidate[27].y))/px)
 			stride_length = 0
 			right_limit_x = m
 		else:
 			left_limit_x = m
 			with open('stride_length.txt','a') as file:
-			    file.write('m = '+str(m)+' n = '+str(n)+' left_limit_x = '+str(left_limit_x)+' right_limit= '+str(right_limit_x)+' direction = '+str(direction)+'\n')
+				file.write('m = '+str(m)+' n = '+str(n)+' left_limit_x = '+str(left_limit_x)+' right_limit= '+str(right_limit_x)+' direction = '+str(direction)+'\n')
 			
-		print("m =", m, "n =", n, "left_limit =", left_limit_x, "right_limit =", right_limit_x, "direction =", direction)
-	return(direction,left_limit_x,right_limit_x,stride_length)
+		#print("m =", m, "n =", n, "left_limit =", left_limit_x, "right_limit =", right_limit_x, "direction =", direction)
+	return(direction,left_limit_x,right_limit_x,stride_length,step)
 	
-def stride_length(candidate,diction1,lelim,rilim):
-    data=s_length(candidate,diction1,lelim,rilim)
-    return data[3]
+def stride_length(candidate,diction1,lelim,rilim,step):
+    data=s_length(candidate,diction1,lelim,rilim,step)
+    return data[4]
     
 	
 

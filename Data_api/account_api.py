@@ -130,6 +130,14 @@ class accountAPI(base_account):
             print(response.json().get('error'))
         return response
 
+    def update_video_detail(self,data):
+        url=self.url+'video_detail/'
+        response=requests.put(url=url,json=data)
+        if response.status_code==200:
+            print(response.json().get('message'))
+        else:
+            print(response.json().get('error'))
+        return response
 
 
 

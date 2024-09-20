@@ -8,8 +8,6 @@
     <y>0</y>
     <width>960</width>
     <height>540</height>
-    <width>741</width>
-    <height>552</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -149,7 +147,6 @@
         <size>
          <width>20</width>
          <height>40</height>
-         <height>50</height>
         </size>
        </property>
       </spacer>
@@ -216,7 +213,6 @@
        </item>
        <item>
         <widget class="QLineEdit" name="born">
-        <widget class="QDateEdit" name="Date_of_birth">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -230,11 +226,6 @@
          </property>
          <property name="readOnly">
           <bool>true</bool>
-         <property name="minimumSize">
-          <size>
-           <width>132</width>
-           <height>0</height>
-          </size>
          </property>
         </widget>
        </item>
@@ -296,7 +287,6 @@
        </item>
        <item>
         <widget class="QLineEdit" name="weight">
-        <widget class="QLineEdit" name="Weight">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -320,7 +310,7 @@
        <item>
         <widget class="QLabel" name="label_6">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -340,45 +330,6 @@
        </item>
        <item>
         <widget class="QLineEdit" name="score">
-        <widget class="QLineEdit" name="Total_Run">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
-         <property name="readOnly">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_6">
-       <item>
-        <widget class="QLabel" name="label_7">
-         <property name="font">
-          <font>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Distance:</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="distance">
-        <widget class="QLineEdit" name="Total_Time">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -416,7 +367,6 @@
        </item>
        <item>
         <widget class="QLineEdit" name="spend_time">
-        <widget class="QLineEdit" name="Total_Run_time">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -452,7 +402,6 @@
         <size>
          <width>20</width>
          <height>40</height>
-         <height>30</height>
         </size>
        </property>
       </spacer>

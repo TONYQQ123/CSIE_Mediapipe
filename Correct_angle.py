@@ -1,14 +1,27 @@
 from Angle import Caculate_angle
+from Angle import Angle
 import cv2
 import json
-
+def refresh_angle(candidate):
+    middle_shoulder_x = abs(candidate[12].x - candidate[11].x) / 2
+    middle_shoulder_x = int(middle_shoulder_x + candidate[12].x) if candidate[12].x < candidate[11].x else int(middle_shoulder_x + candidate[11].x)
+    middle_shoulder_y = abs(candidate[12].y - candidate[11].y) / 2
+    middle_shoulder_y = int(middle_shoulder_y + candidate[12].y) if candidate[12].y < candidate[11].y else int(middle_shoulder_y + candidate[11].y)
+    degree = Angle(middle_shoulder_x,middle_shoulder_y,candidate[0].x,candidate[0].y,middle_shoulder_x+10,middle_shoulder_y)  
+    #right = 1?
+    #print("dergee___ = ",degree)
+    if (degree<90):
+        return 1
+    else:
+        return 0 
+    
 def draw_correct_angle(flag,candidate,image):
     if flag[0]:
         middle_shoulder_x = abs(candidate[12].x - candidate[11].x) / 2
         middle_shoulder_x = int(middle_shoulder_x + candidate[12].x) if candidate[12].x < candidate[11].x else int(middle_shoulder_x + candidate[11].x)
         middle_shoulder_y = abs(candidate[12].y - candidate[11].y) / 2
         middle_shoulder_y = int(middle_shoulder_y + candidate[12].y) if candidate[12].y < candidate[11].y else int(middle_shoulder_y + candidate[11].y)
-        cv2.line(image, (int(candidate[0].x), int(candidate[0].y)), (middle_shoulder_x, middle_shoulder_y), (0, 0, 255), 5)
+        cv2.line(image, (int(candidate[0].x), int(candidate[0].y)), (middle_shoulder_x, middle_shoulder_y), (255, 255, 255), 5)#123
     if flag[1]:
         cv2.line(image, (int(candidate[23].x), int(candidate[23].y)), (int(candidate[25].x), int(candidate[25].y)), (0, 0, 255), 5)
         cv2.line(image, (int(candidate[25].x), int(candidate[25].y)), (int(candidate[27].x), int(candidate[27].y)), (0, 0, 255), 5)
@@ -29,7 +42,7 @@ def draw_correct_angle(flag,candidate,image):
 
 
 def check_angle(candidate,config,image):
-    neck,arm_left,arm_right,knee_left,knee_right=Caculate_angle(candidate)
+    neck,arm_left,arm_right,knee_left,knee_right = Caculate_angle(candidate)
     flag_neck=False
     flag_armR=False
     flag_armL=False
