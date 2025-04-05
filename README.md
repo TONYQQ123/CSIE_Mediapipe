@@ -11,3 +11,6 @@
 
 ### Pose landmarks
 ![GITHUB](https://developers.google.com/static/mediapipe/images/solutions/pose_landmarks_index.png "Landmarks")
+
+### Demo
+[![Demo Video](https://youtu.be/JM64HlCe688)
