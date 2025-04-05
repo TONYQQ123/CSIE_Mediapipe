@@ -13,10 +13,9 @@
 ![GITHUB](https://developers.google.com/static/mediapipe/images/solutions/pose_landmarks_index.png "Landmarks")
 
 ### Demo
-1. [demo1.1.mp4](https://github.com/TONYQQ123/CSIE_Mediapipe/raw/main/demo1.1.mp4)
+https://github.com/user-attachments/assets/ad4218d9-793e-4e33-9195-e21ff040a24f
 
-2. [demo1.2.mp4](https://github.com/TONYQQ123/CSIE_Mediapipe/raw/main/demo1.2.mp4)
 
-3. [demo1.3.mp4](https://github.com/TONYQQ123/CSIE_Mediapipe/raw/main/demo1.3.mp4)
+
 
 
